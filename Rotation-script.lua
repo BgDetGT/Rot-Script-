@@ -1,22 +1,22 @@
 CONFIG = {
     Main_setting = {
-        License = "License", -- put your rotation license here / taruh lisensi rotasi di sini
+        License = "CiZMDNg4FN7dYwBkJbBf", -- put your rotation license here / taruh lisensi rotasi di sini
         ItemID = 4584, -- this item id farmable not pack / ini item id farmable bukan item id pack
-        Pack = "vending_machine"
+        Pack = "surgical_kit"
     },
     Farm_setting = {
         farm_world = {
-            "farm1","farm2","farm3","farm4"
+            "UNQOY","ESLPB","STSJW","PBFWB","SBKQM","IHQKA","VKVDY","FCOLQ","UMCWD","JQPUL",
         },
-        farm_world_id = "iddoor",
-        delay_harvest = 200,
-        delay_plant = 200
+        farm_world_id = "pedet10mod",
+        delay_harvest = 120,
+        delay_plant = 120
     },
     Storage_setting = {
-        storage_seed = "storage",
-        storage_seed_id = "iddoor",
-        storage_pack = "storage",
-        storage_pack_id = "iddoor"
+        storage_seed = "bewemulukontol1",
+        storage_seed_id = "de62",
+        storage_pack = "bewemulukontol",
+        storage_pack_id = "K2DJ82JD"
     },
     Break_setting = {
         bool_break_other_world = false, --true if you want to break block in other world / true jika kamu ingin break di world lain
@@ -31,13 +31,13 @@ CONFIG = {
         disable_buypack = false --true if you want to keep gems / true jika kamu ingin menyimpan gems
     },
     Other_setting = {
-        repeat_world = false, --true for looping world
-        url_webhook = "",
+        repeat_world = true, --true for looping world
+        url_webhook = "https://discord.com/api/webhooks/1055057478016057344/CEb5LY64nbu5VEaWfiHlLv_fhMJyJWcxdK-CYFdqd8ztjvMEelzmcVol1PoCmHpi6gvm",
         short_webhook = false,
         disable_webhook = false
     },
     Custom_gems_buypack = {
-        false, 20000 
+        false, 12000 
     },
     Avoid_nuke = {
         use_feature = false,
@@ -51,18 +51,24 @@ CONFIG = {
 
 --==== UPDATE CONFIG PUT HERE ====--
 
+CONFIG.auto_wear_pickaxe = {
+    use_feature = true,
+    storage_pickaxe = "ywexl",
+    storage_pickaxe_id = "mamatbew190"
+}
+
 CONFIG.max_slot_backpack = 36
-CONFIG.detect_floating_objects = false
+CONFIG.detect_floating_objects = true
 CONFIG.disable_get_usage_cpu_ram = false
 CONFIG.disable_plant = false
 CONFIG.sulap = false
 
 CONFIG.Custom_delay = {
-    use_feature = false, --true if you want to use custom delay
-    delay_break = 200, -- millisecond
-    delay_put = 200, -- millisecond
-    delay_harvest = 200, -- millisecond
-    delay_plant = 200, -- millisecond
+    use_feature = true, --true if you want to use custom delay
+    delay_break = 120, -- millisecond
+    delay_put = 120, -- millisecond
+    delay_harvest = 120, -- millisecond
+    delay_plant = 120, -- millisecond
     delay_findpath_harvest = 200, -- millisecond
     delay_findpath_plant = 200, -- millisecond
     delay_findpath_break = 800, -- millisecond
@@ -84,12 +90,12 @@ CONFIG.drop_item = {
 }
 
 CONFIG.notification = {
-    use_feature = false,
+    use_feature = true,
     url_webhook = "url",
-    username = "mybot", -- username bot webhook
+    username = "https://discord.com/api/webhooks/1055746817318469652/DM2sgg_Km6GwBccdPp3i6Y8GqA1pjKjCzaJg1Dl5MuZ3AO6RCJpDvl9GioCs2yFuS8_8", -- username bot webhook
     schedule = {
-        use_schedule = false,
-        delay = 60 -- every 60 minute send status of bot
+        use_schedule = true,
+        delay = 15 -- every 60 minute send status of bot
     }
 }
 
@@ -98,8 +104,8 @@ CONFIG.move_when_breaking_block = {
     trigger_second = 50
 }
 
-CONFIG.say_random_word = true
-CONFIG.use_animation = false -- animation punch
+CONFIG.say_random_word = false
+CONFIG.use_animation = true -- animation punch
 
 CONFIG.offline_time = {
     use_feature = false,
